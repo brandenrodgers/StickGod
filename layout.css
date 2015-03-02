@@ -2,12 +2,14 @@ body {
 				background: #BCC6CC;
 			}
 			canvas {
+				margin-left: auto;
+				margin-right: auto;
+				float: left;
 				vertical-align: middle;
 				background: #ffffff;
-				border-size: 5px;
 				border-style: inset;
 				border-color: #380000;
-				padding: 10;
+				padding: 0;
 				margin: 0 auto;
 			}
 			#god_container {
@@ -15,13 +17,11 @@ body {
 			}
 			#main_container {
 				position: static;
-				float: left;
 			}
 			#menu_container {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-				border-size: 7px;
 			}
 			#button {
 				position: static;
@@ -63,53 +63,18 @@ body {
 				font-weight: bold;
 				color: #8C001A;
 			}
-			#score {
-				position: fixed;
-				top: 50%;
-				left: 55%;
-				margin: -250px 0 0 0;
-				text-align: center;
-				width: 20%;
-				font-size: 32px;
-				color: #151B54;
-				background: #737CA1;
-				border-style: solid;
-				border-width: 5px;
-			}
-			#healthbox {
-				position: fixed;
-				width: 20%;
-				text-align: center;
-				top: 50%;
-				margin: -250px 0 0 0;
-				left: 25%;
-				color: #C11B17;
-				font-size: 32px;
-				background: #E8ADAA;
-				border-style: solid;
-				border-width: 5px;
-			}
-			#effectbox {
-				position: fixed;
-				width: 20%;
-				text-align: center;
-				top: 50%;
-				margin: -150px 0 0 0;
-				left: 3%;
-				color: #298B13;
-				font-size: 25px;
-				background: #9AF2A7;
-				border-style: solid;
-				border-width: 5px;
-			}
-			#highscores {
-				position: fixed;
+			#materialsbox {
+				margin-left: auto;
+				margin-right: auto;
+				float: left;
 				width: 150px;
+				height: 150px;
 				text-align: center;
 				top: 60%;
 				margin: -250px 0 0 0;
 				left: 80%;
-				background: #ffffff;
+				background: #CC9966;
 				border-style: solid;
+				border-color: #500000;
 				border-width: 5px;
 			}
