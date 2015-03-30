@@ -17,9 +17,9 @@ var ZMax = 500;
 var ZScalingFactor = .5;
 var YScalingFactor = .3;
 var GameSpeed = 50;
-var Lane1 = 480;    
-var Lane2 = 445;
-var Lane3 = 410;
+var Lane1 = 480;  
+var Lane2 = 445; 
+var Lane3 = 410; 
 var Lane4 = 375;
 var MenuLength = 1000;
 var MenuHeight = 115;
@@ -637,7 +637,7 @@ function god_draw()
 	{
 		var stick_image = new Image();
 		stick_image.src = "player_images/p_" + pArmy.pFootSoldiers[i].type + "_top.png";
-		context.drawImage(stick_image,pArmy.pFootSoldiers[i].x,pArmy.pFootSoldiers[i].z);
+		context.drawImage(stick_image,pArmy.pFootSoldiers[i].x,(pArmy.pFootSoldiers[i].z - 369) * 4);
 	}
 
 	//Draw every enemy soldier
@@ -645,7 +645,7 @@ function god_draw()
 	{
 		var enemy_image = new Image();
 		enemy_image.src = "enemy_images/e_" + eArmy.eFootSoldiers[i].type + "_top.png";
-		context.drawImage(enemy_image,eArmy.eFootSoldiers[i].x,eArmy.eFootSoldiers[i].z);
+		context.drawImage(enemy_image,eArmy.eFootSoldiers[i].x,(eArmy.eFootSoldiers[i].z - 369) * 4);
 	}
 
 	//Draw every god attack
@@ -754,6 +754,7 @@ function draw_all()
 }
 
 ///////////////////// MAIN GAME RUNNING METHODS /////////////////////////////////
+
 
 //Calls draw function
 //Checks game end condition
